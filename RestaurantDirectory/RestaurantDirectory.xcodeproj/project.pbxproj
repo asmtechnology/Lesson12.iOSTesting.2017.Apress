@@ -11,7 +11,11 @@
 		914C02CB1E2D5DE2004C9421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914C02C91E2D5DE2004C9421 /* Main.storyboard */; };
 		914C02CD1E2D5DE2004C9421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914C02CC1E2D5DE2004C9421 /* Assets.xcassets */; };
 		914C02D01E2D5DE2004C9421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914C02CE1E2D5DE2004C9421 /* LaunchScreen.storyboard */; };
-		914C02DB1E2D5DE2004C9421 /* RestaurantDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914C02DA1E2D5DE2004C9421 /* RestaurantDirectoryTests.swift */; };
+		91A68B751E2FFD3800583097 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A68B741E2FFD3800583097 /* Quick.framework */; };
+		91A68B771E2FFD4500583097 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A68B761E2FFD4500583097 /* Nimble.framework */; };
+		91A68B791E2FFD5300583097 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91A68B761E2FFD4500583097 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91A68B7A1E2FFD5600583097 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91A68B741E2FFD3800583097 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91A68B801E30084E00583097 /* RestaurantDirectorySpecificaton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A68B7F1E30084E00583097 /* RestaurantDirectorySpecificaton.swift */; };
 		91B8357C1E2E012800C29EDA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8357B1E2E012800C29EDA /* SearchViewController.swift */; };
 		91B8357D1E2E012800C29EDA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8357B1E2E012800C29EDA /* SearchViewController.swift */; };
 		91B8357F1E2E023D00C29EDA /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8357E1E2E023D00C29EDA /* RestaurantTableViewController.swift */; };
@@ -32,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		91A68B781E2FFD4900583097 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91A68B7A1E2FFD5600583097 /* Quick.framework in CopyFiles */,
+				91A68B791E2FFD5300583097 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		914C02C21E2D5DE2004C9421 /* RestaurantDirectory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantDirectory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		914C02C51E2D5DE2004C9421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +58,10 @@
 		914C02CF1E2D5DE2004C9421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		914C02D11E2D5DE2004C9421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		914C02D61E2D5DE2004C9421 /* RestaurantDirectoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantDirectoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		914C02DA1E2D5DE2004C9421 /* RestaurantDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDirectoryTests.swift; sourceTree = "<group>"; };
 		914C02DC1E2D5DE2004C9421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91A68B741E2FFD3800583097 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		91A68B761E2FFD4500583097 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		91A68B7F1E30084E00583097 /* RestaurantDirectorySpecificaton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDirectorySpecificaton.swift; sourceTree = "<group>"; };
 		91B8357B1E2E012800C29EDA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		91B8357E1E2E023D00C29EDA /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		91B835811E2E025100C29EDA /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
@@ -60,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A68B771E2FFD4500583097 /* Nimble.framework in Frameworks */,
+				91A68B751E2FFD3800583097 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +94,7 @@
 				914C02C41E2D5DE2004C9421 /* RestaurantDirectory */,
 				914C02D91E2D5DE2004C9421 /* RestaurantDirectoryTests */,
 				914C02C31E2D5DE2004C9421 /* Products */,
+				91A68B731E2FFD3800583097 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,8 +127,8 @@
 		914C02D91E2D5DE2004C9421 /* RestaurantDirectoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				914C02DA1E2D5DE2004C9421 /* RestaurantDirectoryTests.swift */,
 				914C02DC1E2D5DE2004C9421 /* Info.plist */,
+				91A68B7F1E30084E00583097 /* RestaurantDirectorySpecificaton.swift */,
 			);
 			path = RestaurantDirectoryTests;
 			sourceTree = "<group>";
@@ -141,6 +164,15 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		91A68B731E2FFD3800583097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91A68B761E2FFD4500583097 /* Nimble.framework */,
+				91A68B741E2FFD3800583097 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +200,7 @@
 				914C02D21E2D5DE2004C9421 /* Sources */,
 				914C02D31E2D5DE2004C9421 /* Frameworks */,
 				914C02D41E2D5DE2004C9421 /* Resources */,
+				91A68B781E2FFD4900583097 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -259,7 +292,7 @@
 			files = (
 				91B835831E2E025100C29EDA /* RestaurantTableViewCell.swift in Sources */,
 				91B8357D1E2E012800C29EDA /* SearchViewController.swift in Sources */,
-				914C02DB1E2D5DE2004C9421 /* RestaurantDirectoryTests.swift in Sources */,
+				91A68B801E30084E00583097 /* RestaurantDirectorySpecificaton.swift in Sources */,
 				91B835801E2E023D00C29EDA /* RestaurantTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +447,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RestaurantDirectoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asmtechnology.RestaurantDirectoryTests;
@@ -428,6 +465,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RestaurantDirectoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asmtechnology.RestaurantDirectoryTests;

@@ -42,7 +42,6 @@
                                 <state key="normal" title="View Restaurant Listings"/>
                                 <connections>
                                     <action selector="onViewListings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhy-mX-XYO"/>
-                                    <segue destination="jJg-7A-jSg" kind="showDetail" identifier="presentSearchResults " id="paM-5m-oUg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a location in London" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8D7-4H-7Rd">
@@ -70,6 +69,7 @@
                     <connections>
                         <outlet property="locationPicker" destination="szs-Ua-5pA" id="f2Y-37-epF"/>
                         <outlet property="viewRestaurantButton" destination="8bC-gx-qUN" id="Mpl-ZX-HFz"/>
+                        <segue destination="jJg-7A-jSg" kind="push" identifier="presentSearchResults" id="dxi-9G-rVH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,7 +89,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CuN-46-hVG" id="Uyk-hT-aaL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK5-H1-9ya">
@@ -160,8 +160,8 @@
                                     <outlet property="cuisine" destination="A1u-LX-oHg" id="ekL-Yu-pej"/>
                                     <outlet property="distance" destination="P07-zr-dup" id="l8c-LC-tSH"/>
                                     <outlet property="location" destination="oke-CH-C5c" id="99L-fo-RaX"/>
+                                    <outlet property="name" destination="AK5-H1-9ya" id="1pc-oI-c71"/>
                                     <outlet property="rating" destination="SDj-PF-Grr" id="DR5-m6-gyJ"/>
-                                    <outlet property="restaurantName" destination="AK5-H1-9ya" id="6MS-Vg-9Si"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -170,6 +170,7 @@
                             <outlet property="delegate" destination="jJg-7A-jSg" id="p6n-Ca-e6b"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="EN1-KZ-zvz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obm-xo-naL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,26 @@
+[
+  {
+    "area": "Bayswater",
+    "rating": "3",
+    "cuisine": "Thai",
+    "distance": "0.4",
+    "tubeStation": "Bayswater",
+    "restaurantName": "Indigo"
+  },
+  {
+    "area": "London Bridge",
+    "rating": "4",
+    "cuisine": "Mexican",
+    "distance": "0.1",
+    "tubeStation": "London Bridge",
+    "restaurantName": "Los Amigos"
+  },
+  {
+    "area": "London Bridge",
+    "rating": "5",
+    "cuisine": "French",
+    "distance": "0.2",
+    "tubeStation": "London Bridge",
+    "restaurantName": "The French Kitchen"
+  }
+]

@@ -58,7 +58,7 @@
   {
     "area": "Holland Park",
     "rating": "5",
-    "cuisine": "English Pub",
+    "cuisine": "English",
     "distance": "0.1",
     "tubeStation": "Holland Park",
     "restaurantName": "The Horse & Coach"
@@ -106,7 +106,7 @@
   {
     "area": "Canary Wharf",
     "rating": "3",
-    "cuisine": "English Pub",
+    "cuisine": "English",
     "distance": "0.1",
     "tubeStation": "Canary Wharf",
     "restaurantName": "The Sailor and the Boat"
